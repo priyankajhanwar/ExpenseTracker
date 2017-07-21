@@ -1,0 +1,23 @@
+.setBackground{
+	background-color: #787878;
+	color:#FFA500;
+	padding:10px;
+}
+
+.margins{
+	    margin: 10px 10px;
+}
+.buttonColor{
+	background-color: #FFA500;
+	color:white
+}
+.amountSet{
+	margin-left: 17px;
+}
+.setImage{
+	    max-width: 35px;
+	    margin:10px;
+	    background-color: #787878;
+		color:#FFA500
+
+}

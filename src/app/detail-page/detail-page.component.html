@@ -1,0 +1,29 @@
+<div class="setBackground">
+	<button class="margins right buttonColor" [routerLink]="['/newExpense']">Add Expense</button>
+	<br/>
+
+<br/>
+
+	<div  class="margins bounds" *ngFor="let dataSet of expenseData, let i=index">
+		<span  *ngIf="dataSet.spendOn === 'Bill'" class="CategoryType">
+			<img  name="bill"  class="setImage" src="../../img/billIcon.png">
+		</span>
+		<span  *ngIf="dataSet.spendOn === 'Entertainment'" class="CategoryType">
+			<img  name="entertainment"  class="setImage" src="../../img/entertainment.png">
+		</span>
+		<span  *ngIf="dataSet.spendOn === 'FoodDrink'" class="CategoryType">
+			<img  name="foodDrink"  class="setImage" src="../../img/foodDrink.jpeg">
+		</span>
+		<span  *ngIf="dataSet.spendOn === 'Investment'" class="CategoryType">
+			<img  name="investment"  class="setImage" src="../../img/investment.jpeg">
+
+		</span>
+
+		<span class="margins dateStyle">{{dataSet.paymentDate | date}}</span>
+		<span class="margins description">{{dataSet.spendFor}}</span>
+		<span class="amountDisplay">Rs.{{dataSet.amountSpend}}</span>
+		
+		<span  (click)="remove(i)" class="remove margins fa fa-trash-o"></span>
+		
+	</div>
+</div> 

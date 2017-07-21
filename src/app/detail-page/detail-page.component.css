@@ -1,0 +1,55 @@
+.margins{
+	    margin: 10px 10px;
+}
+.buttonColor{
+	background-color: #FFA500;
+	color:white
+}
+
+.right{
+	float:right;
+
+}
+.dateStyle{
+	 font-size:x-small;
+	 font-family: "Times New Roman";
+}
+.description{
+	 font-size:26px;
+	 font-family: "Times New Roman";
+	 width:50%;
+}
+.left{
+	float:left;
+}
+.setBackground{
+	background-color: #787878;
+	color:#FFA500;
+	padding:10px;
+
+}
+
+.amountDisplay{
+	float: right;
+    font-size: 31px;
+    margin-right: 10px;
+}
+.bounds{
+	border: 1px solid #000000;
+
+}
+.remove{
+	font-size: 14px;
+}
+.CategoryType{
+		float: left;
+    font-size: 31px;
+    
+}
+.setImage{
+	    max-width: 28px;
+	     margin-left: 6px;
+    margin-top: 3px;
+  
+
+}
