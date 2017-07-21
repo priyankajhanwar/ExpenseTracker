@@ -1,32 +1,26 @@
 <div class="setBackground">
-<form >
-	<p>
+	<form >
+		<p>
 
-		<i class="margins fa fa-pencil"></i><input class="margins" type="text" name="description" 
-		placeholder="What was this spent for?" [(ngModel)]="spendFor" required><br/>
+			<i class="margins fa fa-pencil"></i><input class="margins" type="text" name="description" 
+			placeholder="What was this spent for?" [(ngModel)]="spendFor" required><br/>
 
-		<i class="margins fa fa-inr"></i><input class="margins amountSet" type="number" name="amount" placeholder="Enter amount" [(ngModel)]="amountSpend" required><br/>
+			<i class="margins fa fa-inr"></i><input class="margins amountSet" type="number" name="amount" placeholder="Enter amount" [(ngModel)]="amountSpend" required><br/>
 
-		<i class="margins fa fa-calendar-o"></i><input name="date" class="margins" type="date" [(ngModel)]="paymentDate" required /><br/>
+			<i class="margins fa fa-calendar-o"></i><input name="date" class="margins" type="date" [(ngModel)]="paymentDate" required /><br/>
 
-		
-		Category <select name="selectOne" [(ngModel)]="category" >
-       <option value="Bill" name="bill">Bill</option>
-      <option value="Entertainment" name="bill">Entertainment</option>
-      <option value="FoodDrink" name="bill">Food/Drink</option>
-        <option value="Investment" name="bill">Investment</option>
-    		</select>
-	<!--   <span>
-		<img  name="bill"  class="setImage" src="../../img/billIcon.png">
-		<img  name="entertainment"  class="setImage" src="../../img/entertainment.png">
-		<img  name="foodDrink"  class="setImage" src="../../img/foodDrink.jpeg">
-		<img  name="investment"  class="setImage" src="../../img/investment.jpeg">
-	  </span> -->
+			
+			Category <select name="selectOne" [(ngModel)]="category" >
+			<option value="Bill" name="bill">Bill</option>
+			<option value="Entertainment" name="bill">Entertainment</option>
+			<option value="FoodDrink" name="bill">Food/Drink</option>
+			<option value="Investment" name="bill">Investment</option>
+		</select>
 
 	</p>
 
 	<button type="submit" class="margins buttonColor" (click)="addNewExpense(spendFor,amountSpend,paymentDate,category)">Save</button>
-	
+
 
 </form>
 </div>
